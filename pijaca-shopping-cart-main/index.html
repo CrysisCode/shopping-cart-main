@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shoping Cart</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel='stylesheet' type='text/css' media='screen' href='/node_modules/bootstrap/dist/css/bootstrap.min.css'>
+	<script src="script.js"></script>
+	<script src='/node_modules/@popperjs/core/dist/umd/popper.min.js'></script>
+	<script src='/node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+</head>
+<body>
+
+	<h1>Shoping Cart</h1>
+
+	<div class="container">
+		<div class="items">
+			<h2>Vegetables</h2>
+
+			<div class="single-item">
+				<img src="img/potato.png">
+				<div class="si-content">
+					<h3>Potato</h3>
+					<p class="price">$10</p>
+				</div>
+				<div class="actions text-center d-flex justify-items-center justify-content-between align-items-center">
+					<input type="number" name="quantity" value="0" min="0">
+					<button class="btn btn-primary" onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<img src="img/tomato.png">
+				<div class="si-content">
+					<h3>Tomato</h3>
+					<p class="price">$20</p>
+				</div>
+				<div class="actions text-center d-flex justify-items-center justify-content-between align-items-center">
+					<input type="number" name="quantity" value="0" min="0">
+					<button class="btn btn-primary" onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<img src="img/carrot.png">
+				<div class="si-content">
+					<h3>Carrot</h3>
+					<p class="price">$30</p>
+				</div>
+				<div class="actions text-center d-flex justify-items-center justify-content-between align-items-center">
+					<input type="number" name="quantity" value="0" min="0">
+					<button class="btn btn-primary" onclick="addToCart(this)">Add</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart">
+			<h2>Cart</h2>
+			
+			<div class="cart-items"></div>
+
+			<div class="total"></div>
+		</div>
+	</div>
+
+	
+</body>
+</html>
